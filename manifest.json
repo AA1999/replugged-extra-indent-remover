@@ -7,10 +7,10 @@
     "discordID": "624164501012348950",
     "github": "AA1999"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "updater": {
-    "type": "github",
-    "id": "AA1999/replugged-extra-indent-remover"
+    "type": "store",
+    "id": "com.aa.IndentPlugin"
   },
   "license": "MIT",
   "type": "replugged-plugin",
