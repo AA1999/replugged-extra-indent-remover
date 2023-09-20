@@ -37,10 +37,10 @@ function fixIndent(message: string): string {
 		if (indentPattern.length == 0) continue; // No edits required for this one.
 		let pattern = indentPattern.join('');
 		for (let index = startIndex; index < endIndex; ++index) {
-			logger.log(lines[index]);
 			lines[index] = lines[index].replace(pattern, '');
 		}
 	}
+	logger.log('Fixed the indents!');
 	return lines.join('\n');
 }
 
