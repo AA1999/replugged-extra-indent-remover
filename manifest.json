@@ -1,20 +1,22 @@
 {
-  "id": "dev.replugged.PluginTemplate",
-  "name": "Plugin Template",
-  "description": "A plugin template",
+  "id": "com.aa.IndentPlugin",
+  "name": "Extra Indent Plugin",
+  "description": "A plugin to remove the initial indent when pasting code.",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "Arshia Aghaei",
+    "discordID": "624164501012348950",
+    "github": "AA1999"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/plugin-template"
+    "id": "AA1999/replugged-extra-indent-remover"
   },
   "license": "MIT",
   "type": "replugged-plugin",
   "renderer": "src/index.ts",
-  "source": "https://github.com/replugged-org/plugin-template",
-  "image": ["https://i.imgur.com/14CNs3a.png?CHANGE-THIS-URL"]
+  "source": "https://github.com/AA1999/replugged-extra-indent-remover",
+  "image": [
+    "https://imgur.com/EQS4NPs"
+  ]
 }
