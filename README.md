@@ -1,6 +1,6 @@
 # Replugged Extra Indent remover
 
-Removes any 
+Removes any extra indent at the start of a code block (no difference between languages.)
 
 # License
 
