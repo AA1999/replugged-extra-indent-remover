@@ -1,6 +1,6 @@
 {
   "name": "replugged-indent-remover",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "",
   "devDependencies": {
     "@types/node": "^18.17.6",
