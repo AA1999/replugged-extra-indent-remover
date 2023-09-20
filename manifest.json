@@ -1,6 +1,6 @@
 {
-  "id": "com.aa.IndentPlugin",
-  "name": "Extra Indent Plugin",
+  "id": "com.arshiaaghaei.ExtraIndentRemover",
+  "name": "Extra Indent Remover",
   "description": "A plugin to remove the initial indent when pasting code.",
   "author": {
     "name": "Arshia Aghaei",
@@ -10,13 +10,13 @@
   "version": "1.0.2",
   "updater": {
     "type": "store",
-    "id": "com.aa.IndentPlugin"
+    "id": "com.arshiaaghaei.ExtraIndentRemover"
   },
   "license": "MIT",
   "type": "replugged-plugin",
   "renderer": "src/index.ts",
   "source": "https://github.com/AA1999/replugged-extra-indent-remover",
   "image": [
-    "https://imgur.com/EQS4NPs"
+    "https://i.imgur.com/EQS4NPs.png"
   ]
 }
