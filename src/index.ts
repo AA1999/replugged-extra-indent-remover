@@ -15,7 +15,9 @@ function fixIndent(message: string): string {
 	let lines = message.split('\n');
 	let occurrences = findOccurrences(lines);
 
-	logger.log(occurrences);
+	if (occurrences.length == 0)
+		// No need to change anything
+		return message;
 
 	if (occurrences.length % 2 == 1)
 		// Extra ```
@@ -40,11 +42,11 @@ function fixIndent(message: string): string {
 			lines[index] = lines[index].replace(pattern, '');
 		}
 	}
-	logger.log('Fixed the indents!');
+	if (occurrences.length != 0) logger.log('Fixed the indents!');
 	return lines.join('\n');
 }
 
-async function patchIndent(): Promise<void> {
+function patchIndent(): void {
 	injector.before(common.messages, 'sendMessage', (args) => {
 		args[1].content = fixIndent(args[1].content);
 		return args;
@@ -55,8 +57,8 @@ async function patchIndent(): Promise<void> {
 	});
 }
 
-export async function start(): Promise<void> {
-	await patchIndent();
+export function start(): void {
+	patchIndent();
 }
 
 export function stop(): void {
